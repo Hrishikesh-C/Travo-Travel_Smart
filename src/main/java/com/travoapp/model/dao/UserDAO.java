@@ -1,5 +1,10 @@
 package com.travoapp.model.dao;
 
-public interface UserDAO {
 
+
+import com.travoapp.model.dto.Users;
+
+public interface UserDAO {
+boolean registeruser(Users u);
+Users loginUser(String email,String password);
 }
